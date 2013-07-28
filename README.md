@@ -1,19 +1,40 @@
 # Name Generator
-==============
 
 Generates a random adverb, noun combination to be used as some kind of a random name.
+
+### Features
+
+This is just the first basic version. More advanced implementation using Composer and Packagist following.
 
 ## Usage
 
 Copy the generator to your project and use like this.
 
-   require_once './NameGenerator.php';
-   $g = new \MMDC\NameGenerator();   
-   echo $g->generate();
+Include/require the generator
+    require_once './NameGenerator.php';
 
-## Following
+Instantiate and specify operation mode
+    $g = new \MMDC\NameGenerator('us);
 
-This is just the first basic version. More advanced implementation using composer and PHP 5.5 generators following.
+Output
+    echo $g->next();
+
+## Supported Modes
+
+*  moniker (see [moniker](https://github.com/weaver/moniker/))
+*  us
+*  uk
+
+----------
+## Sources
+
+### UK
+*  [Popular UK Names](http://surname.sofeminine.co.uk/w/surnames/most-common-surnames-in-great-britain.html)
+*  [Common UK Surnames](http://www.babycentre.co.uk/c1053850/baby-names-2012)
+
+### US
+*  [Popular US Names](http://www.babycenter.com/top-baby-names-2012)
+*  [Common US Surnames](http://en.wikipedia.org/wiki/List_of_most_common_surnames_in_North_America#United_States)  
 
 ## Licence
 
