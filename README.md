@@ -1,6 +1,6 @@
 # Name Generator
 
-Generates a random adverb, noun combination to be used as some kind of a random name.
+Generates a random name, surname combination. Supports different modes.
 
 ### Features
 
@@ -10,13 +10,16 @@ This is just the first basic version. More advanced implementation using Compose
 
 Copy the generator to your project and use like this.
 
-Include/require the generator
+Include/require the generator:
+
     require_once './NameGenerator.php';
 
-Instantiate and specify operation mode
-    $g = new \MMDC\NameGenerator('us);
+Instantiate and specify operation mode:
 
-Output
+    $g = new \MMDC\NameGenerator('us');
+
+Output:
+
     echo $g->next();
 
 ## Supported Modes
